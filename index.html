@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Caller ID</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="imgs/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- intlTelInput css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/homepage.css" />
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="homepage-header">
+      <nav class="navigation">
+        <div class="container">
+          <div class="navigation-content d-flex justify-content-between align-items-center">
+            <a href="/" class="main-logo d-flex align-items-center">
+              <img src="imgs/logo.svg" alt="logo" />
+              <span class="ml-2">Hello? Caller ID</span>
+            </a>
+            <ul class="d-flex align-items-center justify-content-center">
+              <li class="mr-3"><a href="#" class="contact-link">Contact Us</a></li>
+              <li class="mr-3">
+                <button class="language-dropdown d-flex align-items-center justify-content-between">
+                  <img class="mr-2" src="imgs/us.png" alt="usa flag" />
+                  <span class="mr-2">ENG</span>
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.0001 7.40001L0.600098 2.00001L2.0001 0.600006L6.0001 4.60001L10.0001 0.600006L11.4001 2.00001L6.0001 7.40001Z" fill="black" />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a href="#" class="login">Login / Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="homepage-hero-image">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="hero-left">
+                <h1>Identify incoming calls & block spam calls.</h1>
+                <div class="search">
+                  <form>
+                    <div class="form-group d-flex justify-content-between align-items-center">
+                      <input type="text" id="mobile_code" class="form-control" placeholder="Enter phone number..." name="tel" />
+                      <button type="submit" class="d-flex align-items-center search-btn">
+                        <svg class="flex-shrink-0 mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="white" />
+                        </svg>
+                        <span>Search</span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="app-btns mt-5 d-flex">
+                  <a href="#" class="mr-3">
+                    <img src="imgs/google-play-btn.svg" alt="google-play-btn" />
+                  </a>
+                  <a href="#" class="mr-3">
+                    <img src="imgs/app-store-btn.svg" alt="app-store-btn" />
+                  </a>
+                  <a href="#">
+                    <img src="imgs/huawei-app-gallery-btn.svg" alt="huawei-app-gallery-btn" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="image text-md-right">
+                <img class="img-fluid" src="imgs/girl-image.png" alt="girl-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Start App Features -->
+    <section class="section app-features text-center">
+      <div class="container">
+        <h2 class="section-title mb-4 py-5">App Features</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="feat-box">
+              <img src="imgs/caller-identification.svg" alt="caller-identification img" />
+              <h3 class="mb-3">Caller Identification</h3>
+              <p>Identify unknown numbers, spam or business numbers! Know the real identity and location of callers from all around the world.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feat-box">
+              <img src="imgs/spam-protection.svg" alt="spam-protection img" />
+              <h3 class="mb-3">Spam Protection</h3>
+              <p>Block spam numbers and robocalls. We keep our spam list updated with our community so you are always protected against spam calls.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feat-box">
+              <img src="imgs/search-follow-up.svg" alt="search-follow-up img" />
+              <h3 class="mb-3">Search Follow-Up</h3>
+              <p>Tired of seeing ‘No results found’? Don’t worry, we got you covered. We will find the identity of that number and notify you instantly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Widget-->
+    <section class="section contact-widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 m-auto">
+            <div class="contact-widget-content">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="text pt-5 mt-5 pr-lg-5">
+                    <h3 class="mb-4">Contact Widget</h3>
+                    <p>We will display the identity of the person such as name and image for Incoming or Outgoing calls. Spam calls can be identified and avoided with the widget.</p>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="image">
+                    <img class="img-fluid" src="imgs/contact-widget.png" alt="contact-widget image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Details-->
+    <section class="section contact-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 m-auto">
+            <div class="contact-details-content">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <div class="image">
+                    <img class="img-fluid" src="imgs/contact-details.png" alt="contact-details image">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="text">
+                    <h3 class="mb-4">Contact Details</h3>
+                    <p>See contact photo, name, phone number, emails and business location all in one place. We also show you other names of the contact by popularity.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="height: 500px;"></div>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script>
+      // -----Country Code Selection
+      $("#mobile_code").intlTelInput({
+        initialCountry: "in",
+        separateDialCode: true
+        // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+      });
+    </script>
+  </body>
+</html>
