@@ -18,9 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
 
     <!-- intlTelInput css -->
-    <link rel="stylesheet" href="css/iti.css" />
-    <link rel="stylesheet" href="css/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />
+    <!-- Flickity Carousel -->
+    <link rel="stylesheet" href="css/flickity.min.css" />
     <!-- Custom Style -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="css/homepage.css" />
   </head>
 
@@ -30,124 +32,68 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a href="/" class="main-logo d-flex align-items-center">
-            <img width="40" height="40" src="imgs/homepage/logo.svg" alt="logo" />
+            <img src="imgs/homepage/logo.svg" alt="logo" />
             <span class="ml-2 d-none d-md-inline-block">Hello? Caller ID</span>
           </a>
 
           <div class="collapse navbar-collapse show" id="navbarSupportedContent">
-            <div class="container nav-container">
-              <ul class="navbar-nav ml-auto mb-2 mb-lg-0 align-items-lg-center d-flex">
-                <li class="mr-lg-3"><a href="#" class="contact-link">Contact Us</a></li>
-                <li class="mr-lg-3 nav-item dropdown dropdown-center" id="dropdown">
-                  <button class="language-dropdown d-flex align-items-center justify-content-between" id="navbarDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="language d-lg-none">Language</span>
-                    <span class="d-flex align-items-center">
-                      <span class="lang d-flex align-items-center">
-                        <img width="20" height="20" class="mr-2 img-fluid" src="imgs/homepage/us.png" alt="usa flag" />
-                        <span class="mr-2">EN</span>
-                      </span>
-                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.0001 7.40001L0.600098 2.00001L2.0001 0.600006L6.0001 4.60001L10.0001 0.600006L11.4001 2.00001L6.0001 7.40001Z" fill="black" />
-                      </svg>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 align-items-lg-center d-flex">
+              <li class="mr-lg-3"><a href="#" class="contact-link">Contact Us</a></li>
+              <li class="mr-lg-3 nav-item dropdown dropdown-center" id="dropdown">
+                <button class="language-dropdown d-flex align-items-center justify-content-between" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="language d-lg-none">Language</span>
+                  <span class="d-flex align-items-center">
+                    <span class="lang d-flex align-items-center">
+                      <img class="mr-2" src="imgs/homepage/us.png" alt="usa flag" />
+                      <span class="mr-2">ENG</span>
                     </span>
-                  </button>
-                  <ul class="dropdown-menu mb-screen" id="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <a class="dropdown-item nav-dropdown-item active" href="#">
-                        <img width="20" height="20" class="mr-2 img-fluid" src="imgs/homepage/us.png" alt="usa flag" />
-                        <span class="mr-2">English</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item nav-dropdown-item" href="#">
-                        <img width="20" height="20" class="mr-2 img-fluid" src="imgs/homepage/sa.png" alt="saudi arabia flag" />
-                        <span class="mr-2">عربي</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="d-none d-lg-flex">
-                  <a href="#" class="login main-btn">Login / Sign Up</a>
-                </li>
-              </ul>
-            </div>
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0001 7.40001L0.600098 2.00001L2.0001 0.600006L6.0001 4.60001L10.0001 0.600006L11.4001 2.00001L6.0001 7.40001Z" fill="black" />
+                    </svg>
+                  </span>
+                </button>
+                <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item active" href="#">
+                      <img class="mr-2" src="imgs/homepage/us.png" alt="usa flag" />
+                      <span class="mr-2">ENG</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img class="mr-2" src="imgs/homepage/sa.png" alt="saudi arabia flag" />
+                      <span class="mr-2">ARA</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="d-none d-lg-flex">
+                <a href="#" class="login">Login / Sign Up</a>
+              </li>
+            </ul>
           </div>
 
           <div class="d-lg-none d-flex align-items-center">
-            <div class="hamburger" id="hamburger-11" role="navigation" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="ToggleNavigation">
+            <div class="hamburger" id="hamburger-11" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="line"></span>
               <span class="line"></span>
               <span class="line"></span>
             </div>
-            <a href="#" class="login main-btn">Login / Sign Up</a>
+            <a href="#" class="login">Login / Sign Up</a>
           </div>
         </div>
       </nav>
-      <div class="download-apps">
-        <button class="close">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.3973 2.17677L12.9686 0.748047L7.30437 6.41227L1.64015 0.748047L0.211426 2.17677L5.87565 7.84099L0.211426 13.5052L1.64015 14.9339L7.30437 9.26971L12.9686 14.9339L14.3973 13.5052L8.73309 7.84099L14.3973 2.17677Z" fill="#859396"/>
-            </svg>
-            
-        </button>
-        <div class="description">
-          <h3 class="title">Download our top rated App today!</h3>
-        <p class="text">Join hendreds of thouthands of users using Hello? Caller ID</p>
-        </div>
-        <div class="box-download">
-          <div class="our-review">
-            <h4>
-              <span>4.5</span>
-              <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.3937 6.5491L11.3787 5.82094L9.13465 1.27627C9.06965 1.16486 8.97658 1.07243 8.86473 1.0082C8.75288 0.943959 8.62614 0.910156 8.49715 0.910156C8.36817 0.910156 8.24143 0.943959 8.12958 1.0082C8.01772 1.07243 7.92466 1.16486 7.85965 1.27627L5.62132 5.82094L0.606321 6.5491C0.475492 6.5681 0.352591 6.62334 0.251521 6.70855C0.150451 6.79377 0.0752462 6.90557 0.0344146 7.03131C-0.00641699 7.15705 -0.0112458 7.2917 0.0204745 7.42004C0.0521948 7.54838 0.119198 7.66528 0.213905 7.75752L3.8434 11.2992L2.9849 16.2944C2.96249 16.4247 2.97702 16.5587 3.02686 16.6813C3.0767 16.8038 3.15985 16.9099 3.26689 16.9876C3.37393 17.0653 3.50059 17.1115 3.63253 17.1209C3.76447 17.1303 3.8964 17.1026 4.0134 17.0409L8.49999 14.6779L12.9866 17.0367C13.0877 17.0904 13.2007 17.1182 13.3152 17.1174C13.4185 17.1177 13.5205 17.0953 13.6142 17.052C13.7079 17.0087 13.7909 16.9454 13.8576 16.8666C13.9243 16.7878 13.9729 16.6953 14.0001 16.5958C14.0273 16.4962 14.0324 16.3919 14.0151 16.2901L13.1566 11.2949L16.7861 7.75327C16.8808 7.66103 16.9478 7.54413 16.9795 7.41579C17.0112 7.28745 17.0064 7.1528 16.9656 7.02706C16.9247 6.90132 16.8495 6.78952 16.7485 6.7043C16.6474 6.61909 16.5245 6.56385 16.3937 6.54485V6.5491Z" fill="#FB5B29"/>
-              </svg>
-              </h4>
-            <p>8.23K reviews</p>
-          </div>
-          <a href="#" class="app-btn">
-            <img width="182" height="52" class="img-fluid d-block lazyload" data-src="imgs/homepage/google-play-btn-lg.svg" src="#" alt="google-play-btn">
-          </a>
-        </div>
-        <div class="box-download">
-          <div class="our-review">
-            <h4>
-              <span>4.6</span>
-              <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.3937 6.5491L11.3787 5.82094L9.13465 1.27627C9.06965 1.16486 8.97658 1.07243 8.86473 1.0082C8.75288 0.943959 8.62614 0.910156 8.49715 0.910156C8.36817 0.910156 8.24143 0.943959 8.12958 1.0082C8.01772 1.07243 7.92466 1.16486 7.85965 1.27627L5.62132 5.82094L0.606321 6.5491C0.475492 6.5681 0.352591 6.62334 0.251521 6.70855C0.150451 6.79377 0.0752462 6.90557 0.0344146 7.03131C-0.00641699 7.15705 -0.0112458 7.2917 0.0204745 7.42004C0.0521948 7.54838 0.119198 7.66528 0.213905 7.75752L3.8434 11.2992L2.9849 16.2944C2.96249 16.4247 2.97702 16.5587 3.02686 16.6813C3.0767 16.8038 3.15985 16.9099 3.26689 16.9876C3.37393 17.0653 3.50059 17.1115 3.63253 17.1209C3.76447 17.1303 3.8964 17.1026 4.0134 17.0409L8.49999 14.6779L12.9866 17.0367C13.0877 17.0904 13.2007 17.1182 13.3152 17.1174C13.4185 17.1177 13.5205 17.0953 13.6142 17.052C13.7079 17.0087 13.7909 16.9454 13.8576 16.8666C13.9243 16.7878 13.9729 16.6953 14.0001 16.5958C14.0273 16.4962 14.0324 16.3919 14.0151 16.2901L13.1566 11.2949L16.7861 7.75327C16.8808 7.66103 16.9478 7.54413 16.9795 7.41579C17.0112 7.28745 17.0064 7.1528 16.9656 7.02706C16.9247 6.90132 16.8495 6.78952 16.7485 6.7043C16.6474 6.61909 16.5245 6.56385 16.3937 6.54485V6.5491Z" fill="#FB5B29"/>
-              </svg>
-              </h4>
-            <p>5.7K reviews</p>
-          </div>
-          <a href="#" class="app-btn">
-            <img width="182" height="52" class="img-fluid d-block lazyload" data-src="imgs/homepage/app-store-btn-lg.svg" src="#" alt="app-store-btn">
-          </a>
-        </div>
-        <div class="box-download">
-          <div class="our-review">
-            <h4>
-              <span>4.8</span>
-              <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.3937 6.5491L11.3787 5.82094L9.13465 1.27627C9.06965 1.16486 8.97658 1.07243 8.86473 1.0082C8.75288 0.943959 8.62614 0.910156 8.49715 0.910156C8.36817 0.910156 8.24143 0.943959 8.12958 1.0082C8.01772 1.07243 7.92466 1.16486 7.85965 1.27627L5.62132 5.82094L0.606321 6.5491C0.475492 6.5681 0.352591 6.62334 0.251521 6.70855C0.150451 6.79377 0.0752462 6.90557 0.0344146 7.03131C-0.00641699 7.15705 -0.0112458 7.2917 0.0204745 7.42004C0.0521948 7.54838 0.119198 7.66528 0.213905 7.75752L3.8434 11.2992L2.9849 16.2944C2.96249 16.4247 2.97702 16.5587 3.02686 16.6813C3.0767 16.8038 3.15985 16.9099 3.26689 16.9876C3.37393 17.0653 3.50059 17.1115 3.63253 17.1209C3.76447 17.1303 3.8964 17.1026 4.0134 17.0409L8.49999 14.6779L12.9866 17.0367C13.0877 17.0904 13.2007 17.1182 13.3152 17.1174C13.4185 17.1177 13.5205 17.0953 13.6142 17.052C13.7079 17.0087 13.7909 16.9454 13.8576 16.8666C13.9243 16.7878 13.9729 16.6953 14.0001 16.5958C14.0273 16.4962 14.0324 16.3919 14.0151 16.2901L13.1566 11.2949L16.7861 7.75327C16.8808 7.66103 16.9478 7.54413 16.9795 7.41579C17.0112 7.28745 17.0064 7.1528 16.9656 7.02706C16.9247 6.90132 16.8495 6.78952 16.7485 6.7043C16.6474 6.61909 16.5245 6.56385 16.3937 6.54485V6.5491Z" fill="#FB5B29"/>
-              </svg>
-              </h4>
-            <p>1.4K reviews</p>
-          </div>
-          <a href="#" class="app-btn">
-            <img width="182" height="52" class="img-fluid d-block lazyload" data-src="imgs/homepage/huawei-app-gallery-btn-lg.svg" src="#" alt="huawei-app-gallery-btn">
-          </a>
-        </div>
-      </div>
       <div class="homepage-hero-image">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
               <div class="hero-left">
-                <h1 class="pr-xxl-5">Identify incoming calls & block spam calls.</h1>
+                <h1>Identify incoming calls & block spam calls.</h1>
                 <div class="search">
                   <form>
                     <div class="form-group d-flex justify-content-between align-items-center">
                       <input type="text" id="mobile_code" class="form-control" placeholder="Enter phone number..." name="tel" />
-                      <button type="submit" class="d-flex align-items-center justify-content-center search-btn main-btn">
+                      <button type="submit" class="d-flex align-items-center justify-content-center search-btn">
                         <svg class="flex-shrink-0 mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="white" />
                         </svg>
@@ -158,20 +104,20 @@
                 </div>
                 <div class="app-btns justify-content-between mt-3 mt-lg-5 d-flex">
                   <a href="#">
-                    <img width="152" height="44" src="imgs/homepage/google-play-btn.svg" class="img-fluid" alt="google-play-btn" />
+                    <img src="imgs/homepage/google-play-btn.svg" class="img-fluid" alt="google-play-btn" />
                   </a>
                   <a href="#">
-                    <img width="152" height="67" src="imgs/homepage/app-store-btn.svg" class="img-fluid" alt="app-store-btn" />
+                    <img src="imgs/homepage/app-store-btn.svg" class="img-fluid" alt="app-store-btn" />
                   </a>
                   <a href="#">
-                    <img width="152" height="44" src="imgs/homepage/huawei-app-gallery-btn.svg" class="img-fluid" alt="huawei-app-gallery-btn" />
+                    <img src="imgs/homepage/huawei-app-gallery-btn.svg" class="img-fluid" alt="huawei-app-gallery-btn" />
                   </a>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="image mt-4 mt-md-0 text-center text-md-right">
-                <img width="682" height="522" src="imgs/homepage/girl-image.webp" alt="girl-image" />
+                <img src="imgs/homepage/girl-image.png" alt="girl-image" />
               </div>
             </div>
           </div>
@@ -182,25 +128,25 @@
     <!-- Start App Features -->
     <section class="section app-features text-center">
       <div class="container">
-        <h2 class="section-title mb-4 mb-md-5 py-xl-5">App Features</h2>
+        <h2 class="section-title mb-4 py-xl-5">App Features</h2>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="feat-box mb-4 mb-md-0">
-              <img width="312" height="260" class="img-fluid lazyload" data-src="imgs/homepage/caller-identification.svg" src="#" alt="caller-identification img" />
+              <img class="img-fluid" src="imgs/homepage/caller-identification.svg" alt="caller-identification img" />
               <h3 class="mb-3">Caller Identification</h3>
               <p>Identify unknown numbers, spam or business numbers! Know the real identity and location of callers from all around the world.</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="feat-box mb-4 mb-md-0">
-              <img width="312" height="260" class="img-fluid lazyload" data-src="imgs/homepage/spam-protection.svg" src="#" alt="spam-protection img" />
+              <img class="img-fluid" src="imgs/homepage/spam-protection.svg" alt="spam-protection img" />
               <h3 class="mb-3">Spam Protection</h3>
               <p>Block spam numbers and robocalls. We keep our spam list updated with our community so you are always protected against spam calls.</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="feat-box mb-4 mb-md-0">
-              <img width="312" height="260" class="img-fluid lazyload" data-src="imgs/homepage/search-follow-up.svg" src="#" alt="search-follow-up img" />
+              <img class="img-fluid" src="imgs/homepage/search-follow-up.svg" alt="search-follow-up img" />
               <h3 class="mb-3">Search Follow-Up</h3>
               <p>Tired of seeing ‘No results found’? Don’t worry, we got you covered. We will find the identity of that number and notify you instantly.</p>
             </div>
@@ -213,18 +159,18 @@
     <section class="section contact-widget">
       <div class="container">
         <div class="row">
-          <div class="col-lg-11 col-xl-10 m-auto">
-            <div class="contact-widget-content lazyload">
-              <div class="row align-items-center align-items-lg-start">
-                <div class="col-md-6 col-lg-5">
-                  <div class="text mb-3 mb-md-0 pt-lg-5 mt-lg-5 pr-xl-5">
+          <div class="col-lg-11 m-auto">
+            <div class="contact-widget-content">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="text mb-3 mb-md-0 pt-lg-5 mt-lg-5 pr-lg-5">
                     <h2 class="mb-4 section-title">Contact Widget</h2>
                     <p>We will display the identity of the person such as name and image for Incoming or Outgoing calls. Spam calls can be identified and avoided with the widget.</p>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-7">
+                <div class="col-lg-7">
                   <div class="image">
-                    <img width="532" height="647" class="img-fluid lazyload" data-src="imgs/homepage/contact-widget.webp" src="#" alt="contact-widget image" />
+                    <img class="img-fluid" src="imgs/homepage/contact-widget.png" alt="contact-widget image" />
                   </div>
                 </div>
               </div>
@@ -238,15 +184,15 @@
     <section class="section contact-details">
       <div class="container">
         <div class="row">
-          <div class="col-lg-11 col-xl-10 m-auto">
-            <div class="contact-details-content lazyload">
+          <div class="col-lg-11 m-auto">
+            <div class="contact-details-content">
               <div class="row align-items-center">
-                <div class="col-md-6 col-lg-8 order-2 order-md-1">
+                <div class="col-lg-8 order-2 order-lg-1">
                   <div class="image">
-                    <img width="655" height="621" class="img-fluid lazyload" data-src="imgs/homepage/contact-details.webp" src="#" alt="contact-details image" />
+                    <img class="img-fluid" src="imgs/homepage/contact-details.png" alt="contact-details image" />
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 order-1 order-md-2">
+                <div class="col-lg-4 order-1 order-lg-2">
                   <div class="text">
                     <h2 class="mb-4 section-title">Contact Details</h2>
                     <p>See contact photo, name, phone number, emails and business location all in one place. We also show you other names of the contact by popularity.</p>
@@ -263,10 +209,10 @@
     <section class="section smart-options">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-11 col-xl-10 m-auto">
-            <div class="smart-options-content lazyload">
+          <div class="col-lg-11 m-auto">
+            <div class="smart-options-content">
               <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                   <div class="text">
                     <h2 class="mb-4 section-title">Smart Options</h2>
                     <ul>
@@ -277,9 +223,9 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                   <div class="image mt-5 mt-md-0">
-                    <img width="475" height="483" class="img-fluid lazyload" data-src="imgs/homepage/smart-options.webp" src="#" alt="smart-options image" />
+                    <img class="img-fluid" src="imgs/homepage/smart-options.svg" alt="smart-options image" />
                   </div>
                 </div>
               </div>
@@ -290,7 +236,7 @@
     </section>
 
     <!-- Upgrade Premium -->
-    <section class="upgrade-premium text-white text-md-center">
+    <section class="upgrade-premium text-white text-lg-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 m-auto">
@@ -320,7 +266,6 @@
         </div>
         <div class="pricing-plans">
           <div class="plan year-plan main-plan text-center">
-            <a href="#" class="stretch-link"></a>
             <div class="recommended d-inline-flex align-items-center justify-content-center">
               <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.3581 6.40817L12.0474 5.63642L9.67512 0.827417C9.60615 0.71031 9.50781 0.613235 9.38982 0.545791C9.27183 0.478347 9.13828 0.442871 9.00237 0.442871C8.86646 0.442871 8.73291 0.478347 8.61492 0.545791C8.49693 0.613235 8.39859 0.71031 8.32962 0.827417L5.95287 5.63642L0.642122 6.40817C0.503627 6.42816 0.373487 6.48649 0.266414 6.57658C0.159341 6.66667 0.0796056 6.78491 0.0362229 6.91795C-0.00715979 7.05098 -0.0124599 7.1935 0.0209218 7.32939C0.0543036 7.46528 0.125036 7.58913 0.225122 7.68692L4.06887 11.4324L3.16212 16.7222C3.13849 16.8601 3.15392 17.0019 3.20666 17.1315C3.2594 17.2611 3.34735 17.3734 3.46057 17.4556C3.57379 17.5379 3.70776 17.5868 3.84733 17.5969C3.9869 17.607 4.12651 17.5778 4.25037 17.5127L9.00012 15.0159L13.7499 17.5127C13.8737 17.5778 14.0133 17.607 14.1529 17.5969C14.2925 17.5868 14.4265 17.5379 14.5397 17.4556C14.6529 17.3734 14.7408 17.2611 14.7936 17.1315C14.8463 17.0019 14.8618 16.8601 14.8381 16.7222L13.9314 11.4324L17.7751 7.68692C17.8752 7.58922 17.9459 7.4655 17.9794 7.32972C18.0128 7.19394 18.0077 7.05151 17.9645 6.91852C17.9212 6.78552 17.8417 6.66725 17.7348 6.57707C17.628 6.48689 17.498 6.42839 17.3596 6.40817H17.3581Z" fill="white" />
@@ -336,7 +281,6 @@
             <a href="#" class="subscribe-btn">SUBSCRIBE</a>
           </div>
           <div class="plan six-months-plan text-center">
-            <a href="#" class="stretch-link"></a>
             <div class="plan-period">6 Months <span class="off">(70% Off)</span></div>
             <div class="plan-price d-inline-block">
               <div class="usd">$69</div>
@@ -346,7 +290,6 @@
             <a href="#" class="subscribe-btn">SUBSCRIBE</a>
           </div>
           <div class="plan month-plan text-center">
-            <a href="#" class="stretch-link"></a>
             <div class="plan-period">1 Month</div>
             <div class="plan-price d-inline-block">
               <div class="usd">$19</div>
@@ -356,7 +299,6 @@
             <a href="#" class="subscribe-btn">SUBSCRIBE</a>
           </div>
           <div class="plan seven-days-plan text-center">
-            <a href="#" class="stretch-link"></a>
             <div class="plan-period">7 days</div>
             <div class="plan-price d-inline-block">
               <div class="usd">$9</div>
@@ -389,12 +331,12 @@
                 </div>
                 <div class="service-text">
                   <h5>
-                    <svg class="d-xl-none mr-2" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="d-lg-none mr-2" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17.97 18.885L14.614 15.529C13.166 16.189 11.591 16.52 10 16.502C8.36 16.522 6.737 16.168 5.254 15.467C4.10467 14.9062 3.07262 14.1318 2.213 13.185C1.30047 12.2068 0.583275 11.0633 0.0999999 9.81595L0 9.50195L0.105 9.18595C0.82781 7.34224 2.04426 5.73312 3.621 4.53495L1 1.91395L2.413 0.501953L19.382 17.471L17.972 18.885H17.97ZM5.036 5.95095C3.75792 6.84687 2.74865 8.07466 2.117 9.50195C2.77892 11.0291 3.8843 12.3223 5.28986 13.2138C6.69542 14.1053 8.33636 14.5541 10 14.502C11.0498 14.5106 12.0936 14.3415 13.087 14.002L11.287 12.202C10.887 12.398 10.447 12.501 10 12.502C9.20589 12.497 8.44572 12.1793 7.88418 11.6178C7.32265 11.0562 7.00498 10.2961 7 9.50195C7 9.05495 7.103 8.61395 7.3 8.21195L5.036 5.95095ZM17.852 13.112L16.46 11.721C17.0456 11.0589 17.5256 10.3104 17.883 9.50195C17.222 7.97411 16.1168 6.68035 14.711 5.7887C13.3053 4.89705 11.6639 4.44872 10 4.50195C9.753 4.50195 9.505 4.51095 9.265 4.52795L7.5 2.76095C8.322 2.58495 9.16 2.49795 10 2.50195C11.64 2.48195 13.263 2.83595 14.746 3.53695C15.896 4.09695 16.927 4.87195 17.787 5.81895C18.6991 6.79592 19.4163 7.93803 19.9 9.18395L20 9.50195L19.895 9.81795C19.4268 11.036 18.7342 12.1554 17.853 13.118L17.852 13.112Z" fill="black"/>
                       </svg>
                       
                     Hide a number
-                  <span class="hide-price d-xl-none">$5.99</span>
+                  <span class="hide-price d-lg-none">$5.99</span>
                   </h5>
                   <p>Hide a number of your choice! Others won’t be able to see the number in search.</p>
                 </div>
@@ -405,7 +347,7 @@
                   <form>
                     <div class="form-group d-flex justify-content-between align-items-center">
                       <input type="text" id="mobile_code2" class="form-control" placeholder="e.g 123-456-7890" name="tel" />
-                      <button type="submit" class="d-flex align-items-center justify-content-center search-btn main-btn">
+                      <button type="submit" class="d-flex align-items-center justify-content-center search-btn">
                         <svg class="flex-shrink-0 mr-2" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M17.97 18.385L14.614 15.029C13.166 15.689 11.591 16.02 10 16.002C8.36 16.022 6.737 15.668 5.254 14.967C4.10467 14.4062 3.07262 13.6318 2.213 12.685C1.30047 11.7068 0.583275 10.5633 0.0999999 9.31595L0 9.00195L0.105 8.68595C0.82781 6.84224 2.04426 5.23312 3.621 4.03495L1 1.41395L2.413 0.00195312L19.382 16.971L17.972 18.385H17.97ZM5.036 5.45095C3.75792 6.34687 2.74865 7.57466 2.117 9.00195C2.77892 10.5291 3.8843 11.8223 5.28986 12.7138C6.69542 13.6053 8.33636 14.0541 10 14.002C11.0498 14.0106 12.0936 13.8415 13.087 13.502L11.287 11.702C10.887 11.898 10.447 12.001 10 12.002C9.20589 11.997 8.44572 11.6793 7.88418 11.1178C7.32265 10.5562 7.00498 9.79606 7 9.00195C7 8.55495 7.103 8.11395 7.3 7.71195L5.036 5.45095ZM17.852 12.612L16.46 11.221C17.0456 10.5589 17.5256 9.8104 17.883 9.00195C17.222 7.47411 16.1168 6.18035 14.711 5.2887C13.3053 4.39705 11.6639 3.94872 10 4.00195C9.753 4.00195 9.505 4.01095 9.265 4.02795L7.5 2.26095C8.322 2.08495 9.16 1.99795 10 2.00195C11.64 1.98195 13.263 2.33595 14.746 3.03695C15.896 3.59695 16.927 4.37195 17.787 5.31895C18.6991 6.29592 19.4163 7.43803 19.9 8.68395L20 9.00195L19.895 9.31795C19.4268 10.536 18.7342 11.6554 17.853 12.618L17.852 12.612Z" fill="white" />
                         </svg>
@@ -425,7 +367,7 @@
           <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">Omrsmsm 2015</p>
@@ -439,7 +381,7 @@
           <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">MINE CRAFT MODS</p>
@@ -453,7 +395,7 @@
           <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">Smaa Mahamed</p>
@@ -467,7 +409,7 @@
           <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">Abdalla El Hamaki</p>
@@ -481,7 +423,7 @@
           <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">M Kimo</p>
@@ -492,10 +434,10 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review hidden-item d-none d-md-flex">
+          <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">SADAM صدام HUSEN حسين</p>
@@ -506,10 +448,10 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review hidden-item d-none d-md-flex">
+          <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">Magdi Affify</p>
@@ -520,54 +462,12 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review d-none d-md-flex">
-            <div class="review-top">
-              <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
-              </div>
-              <div class="review-info">
-                <p class="user">Smaa Mahamed</p>
-                <span class="dot">⸱</span>
-                <span class="date">6/11, 1:32 AM</span>
-              </div>
-              <div class="review-text">Thanks for providers, very nice application</div>
-            </div>
-            <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
-          </div>
-          <div class="review d-none d-md-flex">
-            <div class="review-top">
-              <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
-              </div>
-              <div class="review-info">
-                <p class="user">Abdalla El Hamaki</p>
-                <span class="dot">⸱</span>
-                <span class="date">6/1, 12:38 AM</span>
-              </div>
-              <div class="review-text">Very beautiful and Amazing</div>
-            </div>
-            <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
-          </div>
-          <div class="review d-none d-md-flex">
-            <div class="review-top">
-              <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
-              </div>
-              <div class="review-info">
-                <p class="user">M Kimo</p>
-                <span class="dot">⸱</span>
-                <span class="date">6/1, 3:16 PM</span>
-              </div>
-              <div class="review-text">Excellent app, Thank you for this app</div>
-            </div>
-            <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
-          </div>
         </div>
         <div class="bottom-reviews js-slideshow2">
-          <div class="review hidden-item d-none d-md-flex">
+          <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">Hayat Hayat</p>
@@ -578,10 +478,10 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review hidden-item d-none d-md-flex">
+          <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">Mohmoud Hosni</p>
@@ -592,10 +492,10 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review hidden-item d-none d-md-flex">
+          <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">Rouiched Rachid</p>
@@ -606,10 +506,10 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review hidden-item d-none d-md-flex">
+          <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">اشرف اشرف</p>
@@ -620,10 +520,10 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review hidden-item d-none d-md-flex">
+          <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">ابن الاكابر</p>
@@ -634,10 +534,10 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review hidden-item d-none d-md-flex">
+          <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">GBAAR ALKFAGY</p>
@@ -648,10 +548,10 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review hidden-item d-none d-md-flex">
+          <div class="review">
             <div class="review-top">
               <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
+                <img src="imgs/homepage/review-stars.svg" alt="review-stars" />
               </div>
               <div class="review-info">
                 <p class="user">الهامى مصطفى</p>
@@ -662,52 +562,7 @@
             </div>
             <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
           </div>
-          <div class="review d-none d-md-flex">
-            <div class="review-top">
-              <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
-              </div>
-              <div class="review-info">
-                <p class="user">Rouiched Rachid</p>
-                <span class="dot">⸱</span>
-                <span class="date">6/17, 1:13 AM</span>
-              </div>
-              <div class="review-text">Good application new experience thank you</div>
-            </div>
-            <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
-          </div>
-          <div class="review d-none d-md-flex">
-            <div class="review-top">
-              <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
-              </div>
-              <div class="review-info">
-                <p class="user">اشرف اشرف</p>
-                <span class="dot">⸱</span>
-                <span class="date">Sat, 2:30 AM</span>
-              </div>
-              <div class="review-text">Identify who’s calling and has a nice name</div>
-            </div>
-            <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
-          </div>
-          <div class="review d-none d-md-flex">
-            <div class="review-top">
-              <div class="stars">
-                <img width="76" height="12" data-src="imgs/homepage/review-stars.svg" class="img-fluid lazyload" src="#" alt="review-stars" />
-              </div>
-              <div class="review-info">
-                <p class="user">ابن الاكابر</p>
-                <span class="dot">⸱</span>
-                <span class="date">6/6, 4:56 PM</span>
-              </div>
-              <div class="review-text">Honestly, Amazing App, geetings to you. Excellent experience!</div>
-            </div>
-            <div class="translate">Translated from Arabic <a href="#">Show Original</a></div>
-          </div>
         </div>
-        <button class="toggle-button p-2 d-md-none">
-          <span>show more</span>
-        </button>
       </div>
     </section>
 
@@ -715,41 +570,41 @@
     <footer class="bg-white">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-3">
+          <div class="col-lg-3">
             <div class="footer-col">
               <h5>
                 <a href="/" class="logo d-block">
-                  <img width="182" height="40" class="img-fluid d-block lazyload" data-src="imgs/homepage/footer-logo.svg" src="#" alt="logo" />
+                  <img class="img-fluid d-block" src="imgs/homepage/footer-logo.svg" alt="logo" />
                 </a>
               </h5>
               <p>We are a team of like-minded people that work together to make you feel connected. We want to ensure that you will have best experience using our app.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-lg-3">
             <div class="footer-col text-center">
-              <div class="d-lg-inline-block">
+              <div class="d-inline-block">
                 <h5 class="text-left">App Download</h5>
                 <ul class="app-btns">
                   <li>
-                    <a href="#" class="app-btn">
-                      <img width="152" height="44" class="img-fluid lazyload" data-src="imgs/homepage/google-play-btn.svg" src="#" alt="google-play-btn" />
+                    <a href="#">
+                      <img class="img-fluid" src="imgs/homepage/google-play-btn.svg" alt="google-play-btn" />
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="app-btn">
-                      <img width="152" height="67" class="img-fluid lazyload" data-src="imgs/homepage/app-store-btn.svg" src="#" alt="app-store-btn" />
+                    <a href="#">
+                      <img class="img-fluid" src="imgs/homepage/app-store-btn.svg" alt="app-store-btn" />
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="app-btn">
-                      <img width="152" height="44" class="img-fluid lazyload" data-src="imgs/homepage/huawei-app-gallery-btn.svg" src="#" alt="huawei-app-gallery-btn" />
+                    <a href="#">
+                      <img class="img-fluid" src="imgs/homepage/huawei-app-gallery-btn.svg" alt="huawei-app-gallery-btn" />
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-lg-3">
             <div class="footer-col">
               <h5>Contact Info</h5>
               <ul>
@@ -761,8 +616,8 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="footer-col last">
+          <div class="col-lg-3">
+            <div class="footer-col">
               <h5>Useful Links</h5>
               <ul>
                 <li><a href="#">Contact Us</a></li>
@@ -775,10 +630,10 @@
 
         <div class="footer-bottom">
           <div class="row">
-            <div class="col-md-6 order-2 order-md-1">
-              <p class="copyright">&copy; <span id="year-now"></span> Hello? Caller ID</p>
+            <div class="col-lg-6">
+              <div class="copyright">&copy; 2022 Hello? Caller ID</div>
             </div>
-            <div class="col-md-6 order-1 order-md-2">
+            <div class="col-lg-6">
               <ul class="social-icons d-flex align-items-center">
                 <li>
                   <a href="#">
@@ -810,30 +665,14 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ml-3 position-relative" id="dropdown2">
-                  <button class="language-dropdown footer-lang-dropdown d-flex align-items-center justify-content-between" id="footerDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="lang d-flex align-items-center">
-                      <img width="20" height="20" class="mr-2 img-fluid lazyload" data-src="imgs/homepage/us.png" src="#" alt="usa flag" />
-                      <span class="mr-2">EN</span>
-                    </span>
+                <li class="ml-3">
+                  <button class="language-dropdown footer-lang-dropdown d-flex align-items-center justify-content-between">
+                    <img class="mr-2" src="imgs/homepage/us.png" alt="usa flag" />
+                    <span class="mr-2">ENG</span>
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6.0001 7.40001L0.600098 2.00001L2.0001 0.600006L6.0001 4.60001L10.0001 0.600006L11.4001 2.00001L6.0001 7.40001Z" fill="black" />
                     </svg>
                   </button>
-                  <ul class="dropdown-menu" id="dropdown-menu2" aria-labelledby="footerDropdown">
-                    <li>
-                      <a class="dropdown-item active" href="#">
-                        <img width="20" height="20" class="mr-2 img-fluid lazyload" data-src="imgs/homepage/us.png" src="#" alt="usa flag" />
-                        <span class="mr-2">English</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <img width="20" height="20" class="mr-2 img-fluid lazyload" data-src="imgs/homepage/sa.png" src="#" alt="saudi arabia flag" />
-                        <span class="mr-2">عربي</span>
-                      </a>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </div>
@@ -844,7 +683,8 @@
 
     <script src="js/flickity.pkgd.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/iti.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
     <script>
       // -----Country Code Selection
       $("#mobile_code,#mobile_code2").intlTelInput({
