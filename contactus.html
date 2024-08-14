@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="keywords" content="Hello? Caller ID" />
+  <meta name="description"
+    content="We are a team of like-minded people that work together to make you feel connected. We want to make sure that you will have best experience using our app. We don't give up easily. Follow us on social media to stay connected." />
+  <title>Hello? Caller ID</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="imgs/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="imgs/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#00aba9" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Custom Style -->
+  <link href="css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+
+<body>
+  <!-- Start Header -->
+  <header class="search-header">
+    <div data-load="includes/header.html"></div>
+  </header>
+
+  <div class="contactus-content">
+    <div class="contact-us">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Please fill out these fields and let us know how we can help?</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-9 col-xl-8 m-auto">
+            <div class="contact-form-content">
+              <form id="myform" class="form-contact">
+                <div class="form-group">
+                  <label for="reason">Select a reason</label>
+                  <select name="reason" id="reason">
+                    <option value="new-feature">I’d like to request a new feature</option>
+                    <option value="have-quesiton">I have a question</option>
+                    <option value="feedback">I have feedback on the app</option>
+                    <option value="not-working">Something not working</option>
+                    <option value="payment">Payment</option>
+                    <option value="else">Something else</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group">
+                  <label for="msg">Message</label>
+                  <textarea name="msg" id="msg" placeholder="Enter your message here..." required></textarea>
+                </div>
+                <button type="submit" class="main-btn">Send Message</button>
+              </form>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="message-sent text-center">
+    <div class="icon d-flex justify-content-center">
+      <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="96" height="96" rx="48" fill="#15CF74" />
+        <path
+          d="M43.7202 59.9998C43.4459 59.9989 43.1748 59.9417 42.9237 59.8316C42.6725 59.7215 42.4467 59.5609 42.2602 59.3598L32.5402 49.0198C32.1768 48.6326 31.9822 48.1169 31.9991 47.5862C32.0159 47.0555 32.243 46.5532 32.6302 46.1898C33.0174 45.8265 33.5331 45.6318 34.0638 45.6487C34.5945 45.6656 35.0968 45.8926 35.4602 46.2798L43.7002 55.0598L60.5202 36.6598C60.6909 36.4473 60.9032 36.2719 61.1442 36.1443C61.3851 36.0168 61.6496 35.9399 61.9213 35.9184C62.1931 35.8968 62.4664 35.931 62.7244 36.0189C62.9825 36.1068 63.2199 36.2465 63.4219 36.4295C63.624 36.6125 63.7866 36.8348 63.8996 37.0829C64.0126 37.331 64.0737 37.5995 64.0792 37.8721C64.0846 38.1447 64.0343 38.4154 63.9313 38.6678C63.8283 38.9202 63.6748 39.1489 63.4802 39.3398L45.2002 59.3398C45.0155 59.5445 44.7904 59.7088 44.5392 59.8224C44.2879 59.936 44.0159 59.9964 43.7402 59.9998H43.7202Z"
+          fill="white" />
+      </svg>
+
+    </div>
+    <h3 class="section-title">Message Sent!</h3>
+    <p>Your message has been sent successfully. Please set tight while we review your message and get back
+      to
+      you ASAP.</p>
+
+    <div class="buttons d-flex justify-content-center gap-16 mt-4">
+      <a class="app_btn secondary_bg d-flex justify-content-center" href="/contactus.html">Contact Us</a>
+      <a class="app_btn primary_bg d-flex justify-content-center" href="/search.html">Go to Search Page Now!</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white">
+    <div data-load="includes/footer.html"></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#reason').select2({
+        minimumResultsForSearch: Infinity
+      });
+
+      $("#myform").validate({
+        submitHandler: function (form) {
+          $(window).scrollTop(0);
+          $('.message-sent').show()
+          $('.contactus-content').hide()
+          setTimeout(() => form.submit(), 2000);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
