@@ -1966,7 +1966,7 @@ body {
   font-style: normal;
   position: relative;
   overflow-x: hidden;
-  color: #242427;
+  color: #2d2d32;
   background-color: #fff;
   font-family: "Tajawal", sans-serif;
   line-height: 160%;
@@ -1985,6 +1985,7 @@ h5,
 h6 {
   font-weight: 700;
   line-height: 120%;
+  color: #0e0e11;
 }
 
 .hidden {
@@ -2089,8 +2090,9 @@ button {
 }
 
 .pp-wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
+  min-height: 100vh;
 }
 
 .banner-gradient-bg {
@@ -2117,10 +2119,16 @@ button {
   position: absolute;
   top: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .banner-gradient-bg .circle {
     height: 243px;
     width: 243px;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .banner-gradient-bg .circle {
+    height: 500px;
+    width: 500px;
   }
 }
 
@@ -2171,6 +2179,8 @@ button {
 .pp-footer {
   padding-bottom: 40px;
   padding-top: 100px;
+  position: sticky;
+  top: 100%;
 }
 @media (max-width: 991px) {
   .pp-footer {
