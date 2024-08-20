@@ -15,6 +15,16 @@
         width: 100% !important;
       }
 
+      .copyright {
+        text-align: center;
+        display: block !important;
+      }
+
+      .text {
+        margin-top: 0 !important;
+        margin-bottom: 10px !important;
+      }
+
       .header,
       .body,
       .footer {
@@ -39,6 +49,7 @@
       }
 
       .app-btns {
+        float: left !important;
         display: flex;
         flex-wrap: wrap;
       }
@@ -113,23 +124,22 @@
       background: #FFF;
       box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.04);margin-top: 10px;">
         <tr>
-          <td class="footer"
-            style="padding: 20px 24px 10px; border-radius: 24px; background-color: #fff; margin-top: 8px;">
-            <p style="margin: 0 0 5px; color: #9E9EAB; font-size: 14px; text-align: center;
-        ">Download App:</p>
-            <div class="app-btns" style="text-align: center;">
-              <a href="#" class="btn" style="display: inline-block; margin: 10px; transition: .2s">
+          <td class="footer" style="padding: 20px 24px; border-radius: 24px; background-color: #fff; margin-top: 8px;">
+            <p class="text" style="color: #9E9EAB; font-size: 14px;display: inline-block;margin: 8px 0 0;">Download
+              App:</p>
+            <div class="app-btns" style="float: right;display: flex;">
+              <a href="#" class="btn" style="display: inline-block; margin: 8px; transition: .2s">
                 <img style="display: block;" src="apple-store2x.png" width="87" height="22" alt="apple-store-btn">
               </a>
-              <a href="#" class="btn" style="display: inline-block; margin: 10px; transition: .2s">
+              <a href="#" class="btn" style="display: inline-block; margin: 8px; transition: .2s">
                 <img style="display: block;" src="google-play-badge2x.png" width="105" height="22"
                   alt="google-play-btn">
               </a>
-              <a href="#" class="btn" style="display: inline-block; margin: 10px; transition: .2s">
+              <a href="#" class="btn" style="display: inline-block; margin: 8px; transition: .2s">
                 <img style="display: block;" src="huawei-app-gallery-btn2x.png" width="75" height="22"
                   alt="huawei-app-gallery-btn">
               </a>
-              <a href="#" class="btn" style="display: inline-block; margin: 10px; transition: .2s;">
+              <a href="#" class="btn" style="display: inline-block; margin: 8px; transition: .2s;">
                 <img style="display: block;" src="samsung2x.png" width="88" height="22" alt="samsung btn">
               </a>
             </div>
@@ -142,16 +152,19 @@
         <tr>
           <td>
             <div style="margin-top: 20px; padding: 0 10px;">
-              <div style="color: #85858F; font-size: 12px; display: inline-block;">
+              <div class="copyright" style="color: #85858F; font-size: 12px; display: inline-block;">
                 <p style="display: inline-block; margin: 5px 0 0; font-size: 13px;">&copy;
                   <script type="text/javascript">
                     document.write(new Date().getFullYear());
                   </script>
                   CallEye.
                 </p> <br>
-                <a href="#" class="btn" style="font-size: 12px; color: #85858F; margin: 0 1px;">Terms & conditions</a> |
-                <a href="#" class="btn" style="font-size: 12px; color: #85858F; margin: 0 1px;">Privacy policy</a> |
-                <a href="#" class="btn" style="font-size: 12px; color: #85858F; margin: 0 1px;">Contact us</a>
+                <div>
+                  <a href="#" class="btn" style="font-size: 12px; color: #85858F; margin: 0 1px;">Terms & conditions</a>
+                  |
+                  <a href="#" class="btn" style="font-size: 12px; color: #85858F; margin: 0 1px;">Privacy policy</a> |
+                  <a href="#" class="btn" style="font-size: 12px; color: #85858F; margin: 0 1px;">Contact us</a>
+                </div>
               </div>
 
               <div class="social-icons" style="float: right; margin-top: 16px;">

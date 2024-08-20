@@ -20,7 +20,6 @@
   <meta name="theme-color" content="#ffffff" />
 
   <!-- Custom Style -->
-  <link href="css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/contact.css" />
 </head>
 
@@ -54,19 +53,30 @@
               <!-- Contact form content -->
               <div class="contact-form-content">
                 <form id="myform" class="form-contact">
+
                   <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required />
+                    <div class="input-container">
+                      <label for="name">Full Name</label>
+                      <input type="text" id="name" name="name" class="form-control" required />
+                    </div>
                   </div>
+
                   <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                    <div class="input-container">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" class="form-control" required />
+                    </div>
                   </div>
+
                   <div class="form-group">
-                    <label for="msg">Message</label>
-                    <textarea name="msg" id="msg" placeholder="Enter your message here..." required></textarea>
+                    <div class="input-container">
+                      <label for="msg">Message</label>
+                      <textarea class="form-control" name="msg" id="msg" required></textarea>
+                    </div>
                   </div>
-                  <button type="submit" id="submit" disabled class="main-btn">Send Message</button>
+
+                  <button type="submit" id="submit" disabled
+                    class="main-btn d-flex align-items-center justify-content-center">Send Message</button>
                 </form>
 
 
@@ -84,7 +94,7 @@
 
                   </div>
                   <h3>Message sent!</h3>
-                  <p>Thanks for contacting. We received your email, we will do our best to get back to you as soon as
+                  <p>Thanks for contacting us. We received your email, we will do our best to get back to you as soon as
                     possible.</p>
 
                 </div>
@@ -153,13 +163,34 @@
       });
 
       $("#myform").validate({
+        errorElement: "span",
+        rules: {
+          email: {
+            required: true,
+            email: true
+          },
+        },
         submitHandler: function (form) {
-          $(window).scrollTop(0);
-          $('.message-sent').show()
-          $('.contact-form-content').hide()
-          setTimeout(() => form.submit(), 2000);
+          // $(window).scrollTop(0);
+          $('#myform')
+            .find("button#submit")
+            .addClass("loading")
+            .html(
+              "<span class='spinner mx-2'></span><span>Sending...</span>"
+            );
+
+          setTimeout(() => {
+            $('#myform')
+              .find("button#submit")
+              .removeClass("loading")
+              .html("<span>Send Message</span>");
+            $('.message-sent').show()
+            $('.contact-form-content').hide()
+            form.submit()
+          }, 1500);
         }
       });
+
     });
   </script>
 </body>

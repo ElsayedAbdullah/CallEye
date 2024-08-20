@@ -2029,7 +2029,7 @@ footer .footer-menu a:hover {
 }
 @media (max-width: 767px) {
   .pp-content .topic h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
 }
@@ -2038,7 +2038,7 @@ footer .footer-menu a:hover {
 }
 @media (max-width: 991px) {
   .pp-content .topic p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .pp-content .topic p:not(:last-of-type) {
@@ -2074,7 +2074,7 @@ footer .footer-menu a:hover {
 }
 @media (max-width: 991px) {
   .pp-content .topic ul li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .pp-content .topic ul li::marker {

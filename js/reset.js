@@ -64,7 +64,6 @@ $(document).ready(function () {
   $("#reset-password-form").on("submit", function (e) {
     e.preventDefault();
     // password
-    var passwordValue = $("#new-password").val();
 
     if ($("#new-password").val() !== $("#confirm-password").val()) {
       $(this)
@@ -75,8 +74,6 @@ $(document).ready(function () {
       return;
     } else {
       $(this).find(".confirm-password-error").removeClass("show-error");
-    }
-    if (!$("#popover-password-top").hasClass("show-error")) {
       $(this)
         .find("#reset-password-btn")
         .addClass("loading")
