@@ -9,7 +9,7 @@ $(document).ready(function () {
       : input.attr("type", "password");
   });
 
-  $("#new-password").on("keyup paste", getPassword);
+  $("#new-password").on("keyup paste change", getPassword);
 
   // check password strength
   function getPassword() {
